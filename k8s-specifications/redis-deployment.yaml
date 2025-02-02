@@ -17,9 +17,7 @@ spec:
       containers:
       - image: redis:alpine
         name: redis
-        ports:
-        - containerPort: 6379
-          name: redis
+       
         volumeMounts:
         - mountPath: /data
           name: redis-data
